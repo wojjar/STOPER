@@ -49,6 +49,10 @@ table {
 	border-spacing: 0;
 }
 /*==============================================================*/
+.container-fluid {
+	display: flex;
+    justify-content:center;
+}
 body {
 	margin: 0 auto;
 	padding-top: 50px;
@@ -58,7 +62,7 @@ body {
 .stopwatch {
     text-align: center;
 	margin: 0 auto;
-    font-size: 120px;
+    font-size: 60px;
 	font-family: Arial;
 }
 .controls {
@@ -71,8 +75,8 @@ body {
 	height: 50px ;
 	width: 120px;
 }
-
 .list-result,p {
+	font-family: Arial;
 	text-align: center;
 	margin: 0 auto;
 	line-height: 50px;
@@ -80,6 +84,7 @@ body {
 	font-weight: 700;
 	max-height: 400px;
 	width: 220px;
+	letter-spacing: 1.2px;
 }
 .btn-warning{
 	width: 200px; 

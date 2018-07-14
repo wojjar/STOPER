@@ -28,9 +28,9 @@ class Stopwatch extends React.Component {
             this.watch = setInterval(() => this.step(), 10);
         }
     }
-    step() { 
+    step() {
         if (!this.state.isRunning) return;
-        this.calculate(); 
+        this.calculate();
     }
     calculate() {
         const times = this.state.times;
@@ -44,9 +44,9 @@ class Stopwatch extends React.Component {
             times.minutes += 1;
             times.seconds = 0;
         }
-        this.setState({ times }); 
+        this.setState({ times });
     }
-    stop() { 
+    stop() {
         this.setState({ isRunning: false });
         clearInterval(this.watch);
     }
@@ -55,10 +55,10 @@ class Stopwatch extends React.Component {
             results: [...prevState.results, format(this.state.times)]
         }));
     }
-    delete() { 
-      const x = confirm("Are you sure ?");
+    delete() {
+        const x = confirm("Are you sure ?");
         if (x) {
-            this.setState({results: []});
+            this.setState({ results: [] });
         }
     }
     getList() {
